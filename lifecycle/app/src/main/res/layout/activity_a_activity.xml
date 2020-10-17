@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bActivityMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="128dp"
+        android:onClick="clicked"
+        android:text="Activity Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bActivityA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="21dp"
+        android:onClick="clicked"
+        android:text="Activity A"
+        app:layout_constraintStart_toStartOf="@+id/bActivityMain"
+        app:layout_constraintTop_toBottomOf="@+id/bActivityMain" />
+
+    <Button
+        android:id="@+id/bActivityB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="1dp"
+        android:onClick="clicked"
+        android:text="Activity B"
+        app:layout_constraintEnd_toEndOf="@+id/bActivityA"
+        app:layout_constraintTop_toBottomOf="@+id/bActivityA" />
+</androidx.constraintlayout.widget.ConstraintLayout>
